@@ -318,6 +318,7 @@ header{
     scale:1.02;
     box-shadow: 0px 0px 3px var(--descColor);
     padding:5px;
+}
 
 .prevNxt{
     width:100%;
@@ -330,7 +331,7 @@ header{
     display:flex;
     justify-content: space-between;
     gap:3px;
-    background-color: rgba(128, 128, 128, 0.459);
+    background-color: rgba(214, 185, 185, 0.459);
     border-radius:10px;
     border:1px solid var(--descColor);
     padding:0 10px;
