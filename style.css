@@ -13,7 +13,10 @@
     --descColor:#5c6f72;
 }
 
-
+.blog-content{
+    width:90vw;
+    margin:0 auto;
+}
 /* -------------- STYLING THE HEADER SECTION WITH LOGO AND NAV -------------- */
 h1, h2, h3{
     font-family: var(--headFont);
@@ -178,7 +181,7 @@ header{
   .recent{
     height:100vh;
     padding:10px;
-    background-color: yellow;
+    margin-bottom:100px;
   }
 
   .recent h2{
@@ -205,25 +208,124 @@ header{
 .date, .storyTitle h3{
     line-height:30px;
 }
-  .date, .tag, .descTxt{
+.date, .tag, .descTxt{
     font-family: var(--normalTxt);
-  }
+}
+
+.date{
+    font-size:10px;
+    font-weight:bold;
+    color:var(--descColor);
+}
 .storyTitle{
     display: flex;
     justify-content: space-between;
 }
-  .descTxt{
+.leftStory .descTxt{
+    width:90%;
     font-size: 14px;
-    width:80%;
+}
+  .descTxt{
     margin:10px 0;
+    color:var(--descColor);
   }
 
   .tag{
     border:1px solid var(--descColor);
     width:fit-content;
     display:inline-block;
-    margin:10px;
-    padding:5px 10px;
+    padding:3px 10px;
     border-radius:20px;
     font-size: 10px;
   }
+
+  .rightStory{
+    width:50vw;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+  }
+
+  .recent-article{
+    width:100%;
+    height:30%;
+    display: flex;
+    gap:15px;
+  }
+
+  .recent-article img{
+    height:100%;
+  }
+.recent-article .descTxt{
+    font-size:12px;
+}
+
+.recent-article h3{
+    font-size:smaller
+}
+
+.recent-article .tag{
+    margin:0;
+    
+}
+
+
+/* ------------------------- DESIGNING THE BLOG CARDS FOR BLOG POSTS ----------------------------  */
+
+.post-cont{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    width:90%;
+    margin:30px auto;
+}
+.posts{
+    width:100%;
+    height:fit-content;
+    display:flex;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.blog-card{
+    width:32%;
+    height:400px;
+}
+
+.blog-card a{
+    display:block;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    color:inherit; /* picks the styling already set for the elements and disregard the default blue color for links */
+}
+.blog-card img{
+    width:100%;
+}
+
+.prevNxt{
+    width:100%;
+    height:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.previous, .next{
+    display:flex;
+    justify-content: space-between;
+    gap:3px;
+    background-color: rgba(128, 128, 128, 0.459);
+    border-radius:10px;
+    border:1px solid var(--descColor);
+    padding:0 10px;
+}
+
+.prevNxt a{
+    display:block;
+    width:fit-content;
+    height:fit-content;
+    line-height: 20px;
+    font-family: var(--headFont);
+    font-size:12px;
+    text-decoration: none;
+    color:black;
+}
