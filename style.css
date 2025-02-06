@@ -119,15 +119,15 @@ header{
     font-family: var(--headFont);
     text-align: center;
     margin-top:100px;
-  }
+}
 
-  @keyframes gradientMove {
+@keyframes gradientMove {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
-  }
-  
-  .atf-title span{
+}
+
+.atf-title span{
     font-family: "Tourney", serif;;
     font-size: 3rem;
     font-weight: bold;
@@ -136,7 +136,7 @@ header{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradientMove 5s infinite alternate ease-in-out;
-  }
+}
 
   .atf p{
     font-family: var(--normalTxt);
@@ -189,7 +189,6 @@ header{
   .recent-cont{
     width:100%;
     height:93%;
-    background-color: red;
     display:flex;
     gap:20px;
   }
@@ -197,10 +196,34 @@ header{
   .leftStory{
     width:50vw;
     height:100%;
-    background-color: blue;
   }
 
   .leftStory img{
     width:100%;
-    height:70%;
+    height:65%;
+  }
+.date, .storyTitle h3{
+    line-height:30px;
+}
+  .date, .tag, .descTxt{
+    font-family: var(--normalTxt);
+  }
+.storyTitle{
+    display: flex;
+    justify-content: space-between;
+}
+  .descTxt{
+    font-size: 14px;
+    width:80%;
+    margin:10px 0;
+  }
+
+  .tag{
+    border:1px solid var(--descColor);
+    width:fit-content;
+    display:inline-block;
+    margin:10px;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size: 10px;
   }
