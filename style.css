@@ -20,6 +20,7 @@
 /* -------------- STYLING THE HEADER SECTION WITH LOGO AND NAV -------------- */
 h1, h2, h3{
     font-family: var(--headFont);
+    font-size:16px;
 }
 .breaker{
     height:12px;
@@ -226,8 +227,11 @@ header{
     font-size: 14px;
 }
   .descTxt{
+    height:42px;
+    overflow:hidden;
     margin:10px 0;
     color:var(--descColor);
+    font-size: 12px;;
   }
 
   .tag{
@@ -255,13 +259,14 @@ header{
 
   .recent-article img{
     height:100%;
+    width:300px;
   }
 .recent-article .descTxt{
     font-size:12px;
 }
 
 .recent-article h3{
-    font-size:smaller
+    font-size:smaller;
 }
 
 .recent-article .tag{
@@ -297,10 +302,22 @@ header{
     height:100%;
     text-decoration: none;
     color:inherit; /* picks the styling already set for the elements and disregard the default blue color for links */
+    /* transition:all 5s ease-in-out;
+    border-radius:10px; */
+    transition:all 200ms ease-in-out 0.1s;
 }
 .blog-card img{
     width:100%;
+    height:200px;
 }
+.blog-card a .descTxt{
+    height:fit-content;
+}
+
+.blog-card a:hover{
+    scale:1.02;
+    box-shadow: 0px 0px 3px var(--descColor);
+    padding:5px;
 
 .prevNxt{
     width:100%;
