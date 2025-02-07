@@ -1,0 +1,77 @@
+/* ------------------------ RESPONSIVE DESIGN ----------------------------- */
+
+@media (max-width:720px){
+    header, #mainNav ul{
+        height:450px;
+        flex-direction:column;
+        gap:0;
+    }
+    #logo{
+        margin:30px 0px;
+        flex-direction: column;
+
+    }
+    #logo p:first-child{
+        width:100px;
+        height:100px;
+        font-size: 40px;
+        padding-top:30px;
+    }
+    #mainNav ul{
+        width:100%;
+        height:fit-content;
+    }
+    #mainNav ul li{
+        justify-items: center;
+        width:100%;
+        
+    }
+
+    #mainNav ul li a{
+        text-align: center;
+    }
+
+    #league-Btn{
+        height:100px;
+        margin:20px 0;
+        padding-top:15px;
+    }
+
+    /* ---------- above the fold with news letter ----------- */
+
+    .atf{
+        /* background-color: red; */
+        width:80%;
+        margin:0 auto;
+    }
+
+    .atf-title{
+        font-size: 2rem;
+    }
+    .atf p{
+        line-height:25px;
+    }
+    .atf form{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .atf form input[type="email"]{
+        width:300px;
+    }
+    .atf form input::placeholder{
+        text-align: center;
+    }
+    .recent{
+        height:100vh;
+    }
+    .recent-cont{
+        flex-direction: column;
+    }
+    .leftStory{
+        width:100vw;
+        background-color: red;
+    }
+}

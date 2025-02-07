@@ -225,6 +225,7 @@ header{
 .leftStory .descTxt{
     width:90%;
     font-size: 14px;
+    height:fit-content;
 }
   .descTxt{
     height:42px;
@@ -326,6 +327,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin:50px 0;
 }
 .previous, .next{
     display:flex;
@@ -347,3 +349,5 @@ header{
     text-decoration: none;
     color:black;
 }
+
+
