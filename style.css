@@ -351,3 +351,60 @@ header{
 }
 
 
+/* -------------- STYLING THE FOOTER --------------- */
+
+footer{
+    width : 100%;
+    height:200px;
+}
+
+.ft-nl{
+    width:100%;
+    height:150px;
+    display: flex;
+    justify-content: space-around  ;
+    align-items: center;
+    padding:30px 0;
+}
+
+.ft-nl p{
+    margin:0;
+    padding:0;
+    font-family: var(--headFont);
+    font-size:2em;
+    font-weight: bold;
+}
+
+.ft-nl p span{
+    font-size: 14px;
+    font-weight: lighter ;
+}
+
+.ft-nl form input[type="email"]{
+    height:30px;
+    width:300px;
+    border:1px solid var(--descColor);
+    border-radius: 5px;
+    padding-left:20px;
+}
+
+.ft-nl form button {
+    height:30px;
+    width:100px;
+    background: var(--mainGradient);
+    border: none;
+    border-radius: 5px;
+}
+
+.socials{
+    width:85%;
+    margin:0 auto;
+    display: flex;
+    gap:10px;
+    justify-content: start;
+    align-items: center;
+}
+
+.socials a{
+    color:var(--descColor);
+}
