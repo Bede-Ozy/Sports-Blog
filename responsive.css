@@ -64,14 +64,54 @@
     .atf form input::placeholder{
         text-align: center;
     }
+
+
     .recent{
-        height:100vh;
+        height:fit-content;
     }
     .recent-cont{
         flex-direction: column;
+        gap:70px;
     }
     .leftStory{
-        width:100vw;
-        background-color: red;
+        width:100%;
+    }
+    .leftStory img{
+        margin:0px 0px 0px 7%;
+
+    }
+
+    .recent img{
+        width:85%;
+        
+    }
+    .leftStory, .rightStory{
+        width:100%;
+    }
+
+    .recent-article{
+        flex-direction: column;
+        height:400px;
+        
+    }
+    .recent-cont{
+        gap:20px;
+    }
+
+    .recent-article img{
+        margin:0 auto;
+        height:200px;
+        width:100%;
+    }
+
+    /* for the posts container */
+
+    .posts{
+        flex-direction: column;
+    }
+
+    .blog-card{
+        width: 100%;
     }
 }
+
