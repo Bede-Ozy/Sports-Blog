@@ -143,34 +143,49 @@
 
     footer{
         width:100%;
-    }
-
-    .ft-nl{
-        margin:20px 0 0 0;
+        height:300px;
         flex-direction: column;
+        gap:30px;
+    }
+    .ft-nl{
+        flex-direction: column;
+        margin:10px 0 0 0;
+        gap:10px;
+        height:300px;
+    }
+    .ft-nl p{
+        width:85%;
     }
 
-    .ft-nl p span{
-        display:block;
-    }
-
-    .ft-nl p span:first-child{
+    .ft-nl-hd{
         font-family: var(--headFont);
-        font-size:1em;
+        font-size:1.1em;
         text-align: center;
         line-height: 35px;;
         font-weight: bold;
+        
     }
-    .ft-nl p span{
+
+    .ft-nl-sub{
         font-family:var(--normalTxt);
         font-size:12px;
         font-weight:500;
         text-align: center;
         margin:10px auto ;
         width:80%;
-        
+        line-height: 30px;
+        /* color:var(--descColor); */
+        color:red;
     }
-
+    .socials{
+        width:80%;
+        height:30px;
+        margin:0px auto;
+        display: flex;
+        gap:10px;
+        align-items: center;
+        justify-content: center;
+    }
     .ft-nl form{
         margin:10px 0;
         width:100%;
@@ -196,21 +211,25 @@
         border:none;
         box-shadow: 0px 0px 5px var(--descColor);
     }
-
-    .socials{
-        width:80%;
-        height:30px;
-        margin:100px auto;
-        display: flex;
-        gap:10px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .ft-nl form button{
+     .ft-nl form button{
         margin-top:10px;
     }
 
+    /* .ft-nl{
+        margin:20px 0 0 0;
+        flex-direction: column;
+    }
+
+    .ft-nl p span{
+        display:block;
+    }
+
+
+    
+    
+
+   
+ */
 
 
     /* ------------- for the blog pages -------------- */
