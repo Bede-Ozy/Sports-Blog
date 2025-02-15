@@ -44,6 +44,14 @@ header{
     gap:10px;
 }
 
+.lg-link{
+    display:block;
+    width:fit-content;
+    height: fit-content;
+    text-decoration: none;
+    color:inherit;
+}
+
 #logo p{
     font-family: var(--headFont);
 }
@@ -356,8 +364,10 @@ header{
 footer{
     width : 100%;
     height:200px;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
 }
-
 .ft-nl{
     width:100%;
     height:150px;

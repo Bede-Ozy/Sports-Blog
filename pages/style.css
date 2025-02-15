@@ -61,51 +61,8 @@
     height:100px;
 }
 
+
 section .socials{
     width:100%;
     margin-top: 20px;
-}
-
-@media (max-width:720px){
-
-    
-
-    header, #mainNav ul{
-        height:550px;
-        flex-direction:column;
-        gap:0;
-        background-color: red;
-    }
-
-    #logo{
-        margin:30px 0px;
-        flex-direction: column;
-
-    }
-    #logo p:first-child{
-        width:100px;
-        height:100px;
-        font-size: 40px;
-        padding-top:30px;
-    }
-    #mainNav ul{
-        width:100%;
-        height:fit-content;
-    }
-    #mainNav ul li{
-        justify-items: center;
-        width:100%;
-        
-    }
-
-    #mainNav ul li a{
-        text-align: center;
-    }
-
-    #league-Btn{
-        height:100px;
-        margin:20px 0;
-        padding-top:15px;
-    }
-
 }

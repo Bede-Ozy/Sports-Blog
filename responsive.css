@@ -3,13 +3,25 @@
 /* ------------------------ RESPONSIVE DESIGN ----------------------------- */
 
 @media (max-width:720px){
-    header, #mainNav ul{
-        height:450px;
+
+   header{
+    height:100vh;
+    flex-direction: column;
+   }
+
+   #mainNav{
+        height:fit-content;
+        margin:0;
+   }
+
+    #mainNav ul{
+        height:fit-content;
+        width:100%;
         flex-direction:column;
-        gap:0;
+        gap:5px;
     }
     #logo{
-        margin:30px 0px;
+        margin:0px 0px;
         flex-direction: column;
 
     }
@@ -19,30 +31,28 @@
         font-size: 40px;
         padding-top:30px;
     }
-    #mainNav ul{
-        width:100%;
-        height:fit-content;
-    }
     #mainNav ul li{
         justify-items: center;
         width:100%;
-        
+        height: 50px;
     }
 
     #mainNav ul li a{
         text-align: center;
+        height:100%;
+        width:50%;
     }
 
     #league-Btn{
-        height:100px;
-        margin:20px 0;
-        padding-top:15px;
+        flex-basis: 50px;
+        width:150px;
+        margin:0px;
+        padding-top:17px;
     }
 
-    /* ---------- above the fold with news letter ----------- */
+    /* ------- above the fold with news letter ------- */
 
     .atf{
-        /* background-color: red; */
         width:80%;
         margin:0 auto;
     }
@@ -119,7 +129,7 @@
         width:100%;
     }
 
-    /* for the posts container */
+    /* --------- for the posts container ---------- */
 
     .posts{
         flex-direction: column;
@@ -129,32 +139,36 @@
         width: 100%;
     }
 
-    /* FOOTER STYLING */
+    /* ---------  FOOTER STYLING ------------ */
 
     footer{
         width:100%;
-        height:300px;
-
     }
 
     .ft-nl{
-        margin:70px 0 0 0;
+        margin:20px 0 0 0;
+        flex-direction: column;
     }
 
-    .ft-nl p:first-child{
+    .ft-nl p span{
+        display:block;
+    }
+
+    .ft-nl p span:first-child{
         font-family: var(--headFont);
-        font-size:2em;
+        font-size:1em;
         text-align: center;
         line-height: 35px;;
         font-weight: bold;
     }
-    .ft-nl p{
+    .ft-nl p span{
         font-family:var(--normalTxt);
         font-size:12px;
         font-weight:500;
         text-align: center;
         margin:10px auto ;
         width:80%;
+        
     }
 
     .ft-nl form{
@@ -186,17 +200,50 @@
     .socials{
         width:80%;
         height:30px;
-        margin:0 auto;
+        margin:100px auto;
         display: flex;
         gap:10px;
         align-items: center;
         justify-content: center;
     }
 
-    .socials a{
-        display: block;
-        color:var(--descColor);
-        font-size: 2rem;
+    .ft-nl form button{
+        margin-top:10px;
+    }
+
+
+
+    /* ------------- for the blog pages -------------- */
+
+    #blog-cont{
+        width:80%;
+        margin:0 auto;
+    }
+    #blog-cont img{
+        width:100%;
+    }
+
+    #blog-cont h2{
+        font-size: 1.2em;
+        line-height: 30px;
+        margin:15px 0;
+    }
+    #blog-cont p{
+        text-align: justify;
+    }
+
+    #related{
+        height:1150px;
+        margin:0 auto;
+        background-color: yellow;
+    }
+    .blog-cont-sc{
+        margin:20px 0 20px;
+    }
+
+    .related-p{
+        flex-direction: column;
+        margin-top:400px;
+        gap:20px;
     }
 }
-
