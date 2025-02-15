@@ -383,7 +383,7 @@ footer{
     display: block;
 }
 
-.ft-nl span:first-child{
+.ft-nl-hd{
     margin:0;
     padding:0;
     font-family: var(--headFont);
@@ -391,7 +391,7 @@ footer{
     font-weight: bold;
 }
 
-.ft-nl p span{
+.ft-nl-sub{
     font-size: 14px;
     font-weight: lighter ;
 }
